@@ -4,14 +4,49 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+	<script src="js/jquery.min.js"></script>
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
 </head>
-<body style="background-image: url(img/laundry.gif);">
+<body>
 	<div class="container">
+		<img src="http://placehold.it/80x80">
+		<br>
+		<br>
+		<p style="color:#3799FF;font-size:2em;font-family:'Open Sans Condensed';font-weight:700;">Quick <span style="color:#404040">Laundry</span></p>
+		<br>
+		<p style="color:#404040;font-family:'Open Sans';font-size:1.25em;">
+			" Live Life Laundry Free "
+		</p>
+		<br>
+		<div class="intro">What do we do ?</div>
+		<div class="triangle"></div>
+		<div class="more">We do your laundry , So that you don't have to go home and cry for your mama</div>
+		<!--<p class="launch">Count down to launch has begun . Till then buy some more undies</p>-->
+		<form method="post" action="" class="form">
+			<input type="text" placeholder="Enter your email address"><input type="submit" value="Notify Me">
+		</form>
+		<p class="disclaimer">Enter your email address and we'll let you know as soon as we're ready</p>
+		<br>
+		<br>
+		<img src="img/laundry1.gif">
 	</div>
+	<script type="text/javascript">
+
+	$(document).ready(function(){
+		$(".more").hide();
+		$(".triangle").hide();
+		$(".intro").click(function(){
+			$(".triangle").toggle();
+			$(".more").toggle();
+		});
+	});
+	</script>
 </body>
 </html>

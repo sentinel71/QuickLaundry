@@ -48,15 +48,83 @@ table {
 
 /*======END RESET.CSS======*/
 
-body{
-	background-repeat: no-repeat;
-	background-position: center 340px ;
-}
-
 .container{
 	width: 65%;
-	height: 300px;
+	height: 500px;
 	margin-left: 17.5%;
-	margin-top: 20px;
+	margin-right: 17.5%;
+	margin-top: 2%;
+	text-align: center;
+}
+.intro{
+	color: #3799FF;
+	font-family:'Open Sans';
+	font-size:1.1em;
+	cursor: pointer;
+}
+.triangle{
+	border-right:10px solid transparent ;
+	border-left: 10px solid transparent ;
+	border-bottom:10px solid #3799FF;
+	width: 0;
+	height: 0;
+	margin-top: 1%;
+	margin-left: 50%;
+	margin-right: 50%;
+}
+.more{
+	font-family:'Open Sans Condensed';
+	font-weight:300;
+	font-size:1.25em;
+	width: 50%;
+	margin-left: 24%;
+	color: white;
+	margin-bottom: 1%;
 	background-color: #3799FF;
+	padding: 10px ;
+	border-radius: 5px;
+}
+
+.launch{
+	color:#404040;
+	font-family:'Open Sans Condensed';
+	font-size:1.55em;
+	font-weight:700;
+	margin-top:2%;
+	color: white;
+	text-shadow:0 0 5px black;
+}
+.form{
+	margin-top: 2%;
+}
+.form input[type="text"]{
+	width:40%;
+	height: 30px;
+	font-family:'Open Sans';
+	font-size: 1.25em;
+	position: relative;
+	top: 0px;
+	text-align: center;
+}
+.form input[type="submit"]{
+	width:10%;
+	height: 36px;
+	border-style:none;
+	background-color: #3799FF;
+	color:white;
+	font-family:'Open Sans' ;
+	font-size: 1.1em;
+	font-weight: 500;
+	cursor: pointer;
+}
+input[type="text"]:focus{
+	outline: 0;
+}
+.disclaimer{
+	color:#404040;
+	width: 60%;
+	margin-left: 24.7%;
+	text-align: left;
+	font-family:'Open Sans';
+	margin-top: 2%;
 }
